@@ -9,10 +9,10 @@
 
 
 def fibo(times):
-    _arr=[1,1]
+    _arr = [1, 1]
     for i in range(times):
-        _len=_arr.__len__()
-        _arr.append(_arr[_len-1]+_arr[_len-2])
+        _len = _arr.__len__()
+        _arr.append(_arr[_len - 1] + _arr[_len - 2])
     return _arr
 
 

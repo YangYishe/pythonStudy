@@ -8,20 +8,21 @@
 """
 import math
 
-#It's not a good method.
-#when num is big,it will waste too much time.
-def isPerfect (a):
-    _arr=[]
-    for i in range(1,a):
-        if a%i==0:
+
+# It's not a good method.
+# when num is big,it will waste too much time.
+def is_perfect(a):
+    _arr = []
+    for i in range(1, a):
+        if a % i == 0:
             _arr.append(i)
 
-    if math.fsum(_arr)==a:
+    if math.fsum(_arr) == a:
         return True
     else:
         return False
 
-for i in range(1,10000):
-    if isPerfect(i):
-        print(i)
 
+for i in range(1, 10000):
+    if is_perfect(i):
+        print(i)

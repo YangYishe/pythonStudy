@@ -5,7 +5,7 @@
 """
 
 
-def isPrime(a):
+def is_prime(a):
     b = int(a ** 0.5)
     for i in range(2, b):
         if a % i == 0:
@@ -14,5 +14,5 @@ def isPrime(a):
 
 
 for i in range(2, 101):
-    if isPrime(i):
+    if is_prime(i):
         print(i, end=',')
