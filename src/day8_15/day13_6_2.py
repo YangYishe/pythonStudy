@@ -39,6 +39,6 @@ def main():
     print('Execution time: ', (end - start), 's', sep='')
 
 
-# MemoryError 暂不确定何种原因,可能是python版本问题
+# 如果出现MemoryError错误,则可能为Python版本为32位的原因,改为64位即可.
 if __name__ == '__main__':
     main()
